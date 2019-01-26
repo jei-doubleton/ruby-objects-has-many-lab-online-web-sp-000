@@ -7,7 +7,12 @@ class Artist
   end
 
   def add_song(song)
-    # song = Song.new(song)
+    song.artist = self
+    self.songs << song
+  end
+
+  def add_song_by_name(song)
+    song = Song.new(song)
     song.artist = self
     self.songs << song
   end
