@@ -21,14 +21,6 @@ class Artist
     @@song_count << song
   end
 
-  def author_name
-    if self.author
-      self.author.name
-    else
-      nil
-    end
-  end
-
   def songs
     @songs
   end
