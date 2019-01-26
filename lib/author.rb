@@ -18,7 +18,7 @@ class Author
     title = Post.new(title)
     title.author = self
     @posts << title
-    @@post_count << post
+    @@post_count << title
   end
 
   def posts
