@@ -9,7 +9,7 @@ class Song
   end
 
   def all
-    @all
+    @@all
   end
 
 end
